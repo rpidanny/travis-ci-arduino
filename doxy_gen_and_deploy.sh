@@ -92,7 +92,7 @@ if [ ! -f "$DOXYFILE" ]; then
     echo "Grabbing default Doxyfile"
     export DOXYFILE=${TRAVIS_BUILD_DIR}/Doxyfile
 
-    curl -SLs https://raw.githubusercontent.com/rpidanny/travis-ci-arduino/master/Doxyfile.default > ${DOXYFILE}
+    curl -SLs https://raw.githubusercontent.com/rpidanny/travis-ci-arduino/master/Doxyfile > ${DOXYFILE}
     #sed -i "s/^INPUT .*/INPUT = ..\/../"  ${DOXYFILE}
 
     # If we can, fix up the name
